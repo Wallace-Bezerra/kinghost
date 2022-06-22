@@ -1,0 +1,68 @@
+header {
+    background-color: $primary-color;
+    height: 11.9rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 5.6rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                color: $white-02;
+                font-weight: 400;
+                line-height: 1.9rem;
+            }
+        }
+    }
+
+    @include responsive(700px) {
+        .container {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    @include responsive(440px) {
+        height: initial;
+        padding-block: 30px;
+
+        ul {
+            flex-direction: column;
+            gap: 10px;
+
+        }
+    }
+
+
+    // a {
+    //     @include btn(16px, 50px, $secondary-color, $primary-color, $primary-color, $white);
+    // }
+
+
+}
+
+body {
+    height: 2000px;
+}
+
+::-webkit-scrollbar {
+    background-color: #dedede;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $secondary-color;
+    border-radius: 0.8rem;
+}

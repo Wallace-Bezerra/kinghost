@@ -1,0 +1,39 @@
+@mixin responsive($ScreenWidth) {
+    @media(max-width:$ScreenWidth) {
+        @content;
+    }
+}
+
+
+
+@mixin font-PT-m {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+@mixin font-PT-s {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+@mixin btn($height, $width, $bg, $bgHover, $colorText, $colorTextHover) {
+    background-color: $bg;
+    color: $colorText;
+    padding: $height $width;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .3s ease;
+    @include font-PT-s;
+
+    &:hover {
+        background-color: $bgHover;
+        color: $colorTextHover;
+    }
+}
