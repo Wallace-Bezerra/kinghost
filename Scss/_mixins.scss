@@ -6,7 +6,7 @@
 
 
 
-@mixin font-PT-m {
+@mixin font-PT-m-b {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
@@ -14,7 +14,7 @@
     line-height: 120%;
 }
 
-@mixin font-PT-s {
+@mixin font-PT-s-b {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
@@ -30,7 +30,7 @@
     cursor: pointer;
     display: inline-block;
     transition: .3s ease;
-    @include font-PT-s;
+    @include font-PT-s-b;
 
     &:hover {
         background-color: $bgHover;

@@ -39,10 +39,12 @@ header {
         height: initial;
         padding-block: 30px;
 
-        ul {
-            flex-direction: column;
-            gap: 10px;
+        .container {
+            ul {
+                flex-direction: column;
+                gap: 20px;
 
+            }
         }
     }
 

@@ -1,0 +1,8 @@
+.section-main {
+    background-color: $primary-color;
+    margin-top: 11.9rem;
+
+    h1 {
+        @include font-PT-m-b;
+    }
+}
