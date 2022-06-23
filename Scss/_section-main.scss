@@ -1,8 +1,126 @@
 .section-main {
     background-color: $primary-color;
+    height: 66.7rem;
+    box-shadow: inset 0 -9.8rem 0 0rem $white;
     margin-top: 11.9rem;
+    padding-top: 5rem;
 
-    h1 {
-        @include font-PT-m-b;
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .text {
+            max-width: 55rem;
+            color: $white;
+
+            h1 {
+                @include font-PT-m-b;
+                margin-bottom: 1.6rem;
+            }
+
+            p {
+                max-width: 48.8rem;
+                margin-bottom: 3.2rem;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+            }
+
+            a {
+                @include btn(1.6rem, 5rem, $secondary-color, $primary-color, $primary-color, $white);
+                margin-bottom: 8.6rem;
+            }
+
+            .seta {
+                display: flex;
+                align-items: center;
+                gap: 1.6rem;
+
+                img {
+                    background-color: rgba(124, 90, 186, 0.4);
+                    padding: 0.9rem;
+                    border-radius: 0.6rem;
+                }
+
+                span {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+
+        .img {
+            padding-top: 4rem;
+
+            img {
+                width: 100%;
+                height: 540px;
+                object-fit: contain;
+            }
+        }
+
+        @include responsive(1280px) {
+            flex-direction: column;
+
+            .text {
+                text-align: center;
+                margin: 0 auto;
+
+                p {
+                    max-width: initial;
+                }
+
+                a {
+                    margin-bottom: 40px;
+                }
+
+                .seta {
+                    justify-content: center;
+                }
+            }
+
+            .img {
+                img {
+                    position: relative;
+                    left: -29px;
+                }
+            }
+        }
+
+        @include responsive(720px) {
+            .img {
+                display: flex;
+                align-items: center;
+
+                img {
+                    max-width: 600px;
+                    height: initial;
+                    left: -15px;
+                }
+            }
+
+            .text {
+                h1 {
+                    font-size: 36px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @include responsive(1280px) {
+        height: initial;
+        box-shadow: initial;
+        padding-bottom: 40px;
+    }
+
+
+    @include responsive(440px) {
+        margin-top: 8.7rem;
+        padding-top: initial;
     }
 }

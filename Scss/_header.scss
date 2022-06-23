@@ -40,18 +40,17 @@ header {
         padding-block: 30px;
 
         .container {
-            ul {
-                flex-direction: column;
-                gap: 20px;
+            justify-content: center;
+            gap: 0px;
 
+            ul {
+                display: none;
             }
         }
     }
 
 
-    // a {
-    //     @include btn(16px, 50px, $secondary-color, $primary-color, $primary-color, $white);
-    // }
+    
 
 
 }
