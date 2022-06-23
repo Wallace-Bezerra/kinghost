@@ -27,7 +27,7 @@
             }
 
             a {
-                @include btn(1.6rem, 5rem, $secondary-color, $primary-color, $primary-color, $white);
+                @include btn(1.6rem, 5rem, $secondary-color, #371870c9, $primary-color, $white);
                 margin-bottom: 8.6rem;
             }
 
