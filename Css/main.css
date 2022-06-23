@@ -231,6 +231,7 @@ header {
         height: auto;
         align-items: center;
         text-align: center;
-        padding-left: 0px; }
+        padding-left: 0px;
+        padding-block: 30px; }
         .section-resources .container .cards li p {
           max-width: 300px; } }

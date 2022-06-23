@@ -25,7 +25,6 @@
         }
 
         .cards {
-            // border: 5px solid red;
             display: flex;
             align-items: center;
             gap: 20px;
@@ -33,7 +32,6 @@
 
 
             li {
-                // border: 1px solid yellow;
                 width: 280px;
                 height: 323px;
                 display: flex;
@@ -64,7 +62,6 @@
                     font-size: 16px;
                     line-height: 165%;
                 }
-
                 &:hover {
                     background-color: $bg-card;
                     border-radius: 12px;
@@ -74,7 +71,6 @@
                     }
                 }
             }
-
         }
 
         @include responsive(1020px) {
@@ -82,27 +78,21 @@
                 flex-direction: column;
                 gap: 20px;
                 text-align: center;
-                // margin-bottom: 40px;
-
             }
 
             .cards {
                 flex-direction: column;
 
                 li {
-                    // border: 1px solid yellow;
                     width: 100%;
                     height: auto;
                     align-items: center;
                     text-align: center;
                     padding-left: 0px;
-
+                    padding-block: 30px;
                     p {
                         max-width: 300px;
                     }
-
-
-
                 }
             }
         }
