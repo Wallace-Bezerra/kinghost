@@ -5,6 +5,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0px;
+    z-index: 10;
     width: 100%;
 
     .container {
@@ -50,7 +51,7 @@ header {
     }
 
 
-    
+
 
 
 }
